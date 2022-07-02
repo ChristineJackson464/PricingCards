@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Antic+Didone&family=Roboto+Slab:wght@400;600&display=swap');
+
+* { 
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: #d1ced9;
+  height: 100vh;
+  width: 100%;
+}
+
+.cards-wrapper {
+  height: 100%;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.card {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.6)), 
+    url(img/bg.jpeg), center no-repeat;
+  background-size: cover;
+  width: 300px;
+  color: #eff0ed;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
+}
+
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 15px 60px rgba(0, 0, 0, 0.8);
+  transition: all 0.4s;
+}
+
+.card-header {
+  margin-bottom: 40px;
+}
+
+.card-header h3 {
+  font-family: 'Dosis', sans-serif;
+  border-bottom: 1px groove #eff0ed;
+  font-size: 30px;
+  font-weight: 300;
+  color: #75595d;
+  margin: 30px;
+  padding: 10px;
+}
+
+.card-header h1 {
+  font-family: 'Antic Didone', serif;
+  font-size: 60px;
+  font-weight: 300;
+}
+
+.card-header sup {
+  font-size: 35px;
+}
+
+.card-header span {
+  font-size: 18px;
+}
+
+.card-body {
+  margin-bottom: 60px;
+}
+
+.card-body li {
+  font-family: 'Dosis', sans-serif;
+  list-style: none;
+  font-size: 16px;
+  font-weight: 300;
+  margin: 15px 0;
+}
+
+.card-body i {
+  margin-right: 25px;
+}
+
+.card-body .fa-check {
+  color: #0d683a;
+}
+
+.card-body .fa-xmark {
+  color: #911832;
+}
+
+.card-footer {
+  margin-bottom: 40px;
+}
+
+.card-footer button {
+  background-color: #75595d;
+  border: 2px solid #75595d;
+  border-radius: 50px;
+  outline: none;
+  font-family: 'Dosis', sans-serif;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  width: 120px;
+  padding: 10px;
+  color: #eff0ed;
+  cursor: pointer;
+}
+
+@media(max-width: 1200px) {
+  .container {
+    height: 100%;
+  }
+
+  .cards-wrapper {
+    flex-wrap: wrap;
+  }
+
+  .card {
+    margin: 50px;
+  }
+}
